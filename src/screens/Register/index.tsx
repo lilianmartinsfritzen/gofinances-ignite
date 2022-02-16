@@ -69,7 +69,7 @@ export function Register() {
     resolver: yupResolver(schema)
   })
 
-  function handleTransactionTypeSelect(type: 'up' | 'down') {
+  function handleTransactionTypeSelect(type: 'positive' | 'negative') {
     setTransactionType(type)
   }
 
@@ -98,8 +98,10 @@ export function Register() {
       category: category.key,
       date: new Date()
     }
+    
 
     try {
+
       const data = await AsyncStorage.getItem(dataKey)
       const currentData = data ? JSON.parse(data) : []
 
@@ -124,21 +126,13 @@ export function Register() {
       Alert.alert('Não foi possível salvar')
     }
   }
-  
-  useEffect(() => {
-    async function loadData() {
-      const data = await AsyncStorage.getItem(dataKey)
-      console.log(JSON.parse(data!))
-    }
 
-    loadData()
-
-    // async function removeAll() {
-    //   await AsyncStorage.removeItem(dataKey)
-    // }
-
-    // removeAll()
-  }, [])
+  // useEffect(() => {
+  //   async function removeAll() {
+  //     await AsyncStorage.removeItem(dataKey)
+  //   }
+  //   removeAll()
+  // }, [])
 
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -168,14 +162,14 @@ export function Register() {
               <TransactionTypeButton
                 type='up'
                 title='Income'
-                onPress={() => handleTransactionTypeSelect('up')}
-                isActive={transactionType === 'up'}
+                onPress={() => handleTransactionTypeSelect('positive')}
+                isActive={transactionType === 'positive'}
               />
               <TransactionTypeButton
                 type='down'
                 title='Outcome'
-                onPress={() => handleTransactionTypeSelect('down')}
-                isActive={transactionType === 'down'}
+                onPress={() => handleTransactionTypeSelect('negative')}
+                isActive={transactionType === 'negative'}
               />
             </TransactionTypes>
 
