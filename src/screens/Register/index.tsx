@@ -99,7 +99,6 @@ export function Register() {
       date: new Date()
     }
     
-
     try {
 
       const data = await AsyncStorage.getItem(dataKey)
