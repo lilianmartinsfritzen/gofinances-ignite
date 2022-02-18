@@ -42,13 +42,14 @@ interface HighlightData {
 }
 
 export function Dashboard() {
-  const theme = useTheme()
   const [isLoading, setIsLoading] = useState(true)
   const [transactions, setTransactions] = useState<DataListProps[]>([])
   const [
     highlightData,
     setHighlightData
   ] = useState<HighlightData>({} as HighlightData)
+  
+  const theme = useTheme()
 
   function getLastTransactionDate(
     collection: DataListProps[],
