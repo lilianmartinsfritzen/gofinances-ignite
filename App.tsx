@@ -14,7 +14,7 @@ import theme from './src/global/styles/theme'
 
 import { SignIn } from './src/screens/SignIn'
 
-import { AuthContext } from './src/AuthContext'
+import { AuthProvider } from './src/hooks/auth'
 
 import {
   useFonts,
@@ -44,9 +44,9 @@ export default function App(): JSX.Element {
           translucent
         />
         
-        <AuthContext.Provider value={[]}>
+        <AuthProvider>
           <SignIn />
-        </AuthContext.Provider>
+        </AuthProvider>
 
       </NavigationContainer>
     </ThemeProvider>
