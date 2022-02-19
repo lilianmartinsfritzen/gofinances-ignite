@@ -39,8 +39,6 @@ function AuthProvider({ children }: AuthProviderProps) {
   const [userStorageLoading, setUserStorageLoading] = useState(true)
   const userStorageKey = '@gofinances:user'
 
-  console.log(userStorageKey)
-
   async function signInWithGoogle() {
     try {
 
