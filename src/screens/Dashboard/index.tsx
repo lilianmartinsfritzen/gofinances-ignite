@@ -51,7 +51,7 @@ export function Dashboard() {
   ] = useState<HighlightData>({} as HighlightData)
   
   const theme = useTheme()
-  const { signOut } = useAuth()
+  const { signOut, user } = useAuth()
 
   function getLastTransactionDate(
     collection: DataListProps[],
@@ -142,10 +142,6 @@ export function Dashboard() {
     setIsLoading(false)
   }
 
-  useEffect(() => {
-    loadTransactions()
-  }, [])
-
   useFocusEffect(useCallback(() => {
     loadTransactions()
   }, []))
@@ -164,10 +160,10 @@ export function Dashboard() {
             <Header>
               <UserWrapper>
                 <UserInfo>
-                  <Photo source={{ uri: 'https://avatars.githubusercontent.com/u/83084256?v=4' }} />
+                  <Photo source={{ uri: user.photo }} />
                   <User>
                     <UserGreeting>Olá,</UserGreeting>
-                    <UserName>Lílian</UserName>
+                    <UserName>{user.name}</UserName>
                   </User>
                 </UserInfo>
 
