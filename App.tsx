@@ -8,11 +8,13 @@ import AppLoading from 'expo-app-loading'
 import { ThemeProvider } from 'styled-components'
 
 import { NavigationContainer } from '@react-navigation/native'
-import { AppRoutes } from './src/routes/app.routes' 
+import { AppRoutes } from './src/routes/app.routes'
 
 import theme from './src/global/styles/theme'
 
 import { SignIn } from './src/screens/SignIn'
+
+import { AuthContext } from './src/AuthContext'
 
 import {
   useFonts,
@@ -29,19 +31,23 @@ export default function App(): JSX.Element {
     Poppins_700Bold
   })
 
-  if(!fontsLoaded) {
+  if (!fontsLoaded) {
     return <AppLoading />
   }
 
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>
-        <StatusBar 
+        <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
           translucent
         />
-        <SignIn />
+        
+        <AuthContext.Provider value={[]}>
+          <SignIn />
+        </AuthContext.Provider>
+
       </NavigationContainer>
     </ThemeProvider>
   )
