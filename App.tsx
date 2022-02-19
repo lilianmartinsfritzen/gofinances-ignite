@@ -3,18 +3,15 @@ import 'intl'
 import 'intl/locale-data/jsonp/pt-BR'
 import React from 'react'
 import { StatusBar } from 'react-native'
-
 import AppLoading from 'expo-app-loading'
-import { ThemeProvider } from 'styled-components'
-
-import { NavigationContainer } from '@react-navigation/native'
-import { AppRoutes } from './src/routes/app.routes'
 
 import theme from './src/global/styles/theme'
+import { ThemeProvider } from 'styled-components'
 
-import { SignIn } from './src/screens/SignIn'
+import { Routes } from './src/routes' 
+import { AuthProvider, useAuth } from './src/hooks/auth'
 
-import { AuthProvider } from './src/hooks/auth'
+
 
 import {
   useFonts,
@@ -31,24 +28,22 @@ export default function App(): JSX.Element {
     Poppins_700Bold
   })
 
-  if (!fontsLoaded) {
+  const { userStorageLoading } = useAuth()
+
+  if (!fontsLoaded || userStorageLoading) {
     return <AppLoading />
   }
 
   return (
     <ThemeProvider theme={theme}>
-      <NavigationContainer>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
           translucent
-        />
-        
+        />        
         <AuthProvider>
-          <SignIn />
+          <Routes />
         </AuthProvider>
-
-      </NavigationContainer>
     </ThemeProvider>
   )
 }
