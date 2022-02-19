@@ -7,8 +7,7 @@ import { StatusBar } from 'react-native'
 import AppLoading from 'expo-app-loading'
 import { ThemeProvider } from 'styled-components'
 
-import { NavigationContainer } from '@react-navigation/native'
-import { AppRoutes } from './src/routes/app.routes'
+import { Routes } from './src/routes' 
 
 import theme from './src/global/styles/theme'
 
@@ -37,18 +36,14 @@ export default function App(): JSX.Element {
 
   return (
     <ThemeProvider theme={theme}>
-      <NavigationContainer>
         <StatusBar
           barStyle="light-content"
           backgroundColor="transparent"
           translucent
-        />
-        
+        />        
         <AuthProvider>
-          <SignIn />
+          <Routes />
         </AuthProvider>
-
-      </NavigationContainer>
     </ThemeProvider>
   )
 }
