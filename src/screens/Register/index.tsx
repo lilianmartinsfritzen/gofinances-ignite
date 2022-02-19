@@ -3,15 +3,17 @@ import { Modal, TouchableWithoutFeedback, Keyboard, Alert } from 'react-native'
 
 import * as Yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import uuid from 'react-native-uuid'
 
 import { useForm } from 'react-hook-form'
 import { useNavigation } from '@react-navigation/native'
-import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs'
+import { useAuth } from '../../hooks/auth'
 
 import { CategorySelect } from '../CategorySelect'
 
+import { AppRoutesParamList } from '../../routes/app.routes'
 import { InputForm } from '../../components/Form/InputForm'
 import { Button } from '../../components/Form/Button'
 import { TransactionTypeButton } from '../../components/Form/TransactionTypeButton'
@@ -25,7 +27,6 @@ import {
   Fields,
   TransactionTypes,
 } from './styles'
-import { AppRoutesParamList } from '../../routes/app.routes'
 
 export type FormData = {
   [name: string]: any
@@ -51,7 +52,9 @@ export function Register() {
   const [transactionType, setTransactionType] = useState('')
   const [categoryModalOpen, setCategoryModalOpen] = useState(false)
 
-  const dataKey = '@gofinances:transactions'
+  const { user } = useAuth()
+
+  const dataKey = `@gofinances:transactions_user:${user.id}`
 
   const [category, setCategory] = useState({
     key: 'category',
