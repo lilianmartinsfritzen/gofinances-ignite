@@ -15,7 +15,7 @@
 <a href="https://github.com/lilianmartinsfritzen">
   <img src="https://img.shields.io/static/v1?label=self-learning&message=LMF&color=49AA26&labelColor=000000" alt="Self Learning Lílian Martins Fritzen" />
 </a>
-<a href="https://github.com/lilianmartinsfritzen/myskills-ignite/blob/main/LICENSE">
+<a href="https://github.com/lilianmartinsfritzen/gofinances-ignite/blob/main/LICENSE">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000" />
 </a>
 </p>
@@ -164,7 +164,7 @@ npx react-native run-ios && npm start
 
 <h2 id="licenca">📃 Licença</h2>
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/lilianmartinsfritzen/myskills-ignite/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/lilianmartinsfritzen/gofinances-ignite/blob/main/LICENSE) para mais detalhes.
 
 <br>
 
