@@ -48,7 +48,7 @@
 <hr>
 <h3 id="I">📱 MÓDULO I</h3>
 
-- [x] Iniciando a aplicação com Expo Bare Workflow. Expo é uma plataforma de código aberto que auxilia na criação de aplicativos nativos que rodam no Android, no iOS e na Web. O ecossistema Expo ….
+- [x] Iniciando a aplicação com Expo Bare Workflow. Expo é uma plataforma de código aberto que auxilia na criação de aplicativos nativos que rodam no Android, no iOS e na Web.
 
 - [x] Typescript adicionado ao projeto logo após a escolha do template Bare Workflow e explorado ao máximo até o fim da aplicação.
 
@@ -108,11 +108,11 @@
 
 <br>
 <h3>Para simular os ambientes mobile você pode consultar as documentações abaixo:</h3>
-<p><a href="https://developer.android.com/studio/run/emulator?authuser=2">📑 Emulador Android</a></p>
+  <p><a href="https://developer.android.com/studio/run/emulator?authuser=2">📑 Emulador Android</a></p>
 
-<p><a href="https://developer.apple.com/documentation/xcode/running-your-app-in-the-simulator-or-on-a-device">📑 Emulador IOS</a></p>
+  <p><a href="https://developer.apple.com/documentation/xcode/running-your-app-in-the-simulator-or-on-a-device">📑 Emulador IOS</a></p>
 
-<p>🏅 Utilizando o comando `expo start` você pederá selecionar o emulador desejado. Também é possível testar sua aplicação por meio do seu dispositivo físico, desde que estejam compartilhando a mesma rede. Para isso instale o Expo Go.</p>
+  <p>🏅 Utilizando o comando ```expo start``` você pederá selecionar o emulador desejado. Também é possível testar sua aplicação por meio do seu dispositivo físico, desde que estejam compartilhando a mesma rede. Para isso instale o Expo Go.</p>
 
 [![runs with Expo Go](https://img.shields.io/badge/Runs%20with%20Expo%20Go-4630EB.svg?style=flat-square&logo=EXPO&labelColor=f3f3f3&logoColor=000)](https://expo.dev/client)
 
@@ -156,8 +156,6 @@ pod install
 cd ..
 npx react-native run-ios && npm start
 
-
-
 ```
 
 <hr>
@@ -170,6 +168,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.c
 
 <h2 id="desenvolvedora">Desenvolvedora</h2>
   <img src="https://user-images.githubusercontent.com/83084256/180618959-7691ab72-29fd-413f-a489-d3206831231b.jpeg" width="110" height="110" style="border-radius: 65px" /> <br>
-<a href="https://www.linkedin.com/in/lilian-martins-fritzen/" target="blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+  <a href="https://www.linkedin.com/in/lilian-martins-fritzen/" target="blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
