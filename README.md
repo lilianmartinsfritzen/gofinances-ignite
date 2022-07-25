@@ -7,6 +7,7 @@
   <a href="#III">III</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#IV">IV</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#execucao">Execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#desafio">Desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licenca">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#desenvolvedora">🙋‍♀️</a>
 </p>
@@ -157,6 +158,11 @@ cd ..
 npx react-native run-ios && npm start
 
 ```
+
+<hr>
+
+<h2 id="desafio">🏆 Desafio V - Deploy GoFinances</h2>
+  <img src="https://user-images.githubusercontent.com/83084256/180775017-d874dd22-2377-43c7-8fef-900b0e9688d3.png" width="260" height="260"/>
 
 <hr>
 
