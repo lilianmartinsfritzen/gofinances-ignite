@@ -163,7 +163,15 @@ npx react-native run-ios && npm start
 
 <h2 id="desafio">🏆 Desafio V - Deploy GoFinances</h2>
   <img src="https://user-images.githubusercontent.com/83084256/180775017-d874dd22-2377-43c7-8fef-900b0e9688d3.png" width="260" height="260"/>
+<h3 id="I">📱 Desafio stream.data</h3>
 
+- [x] Preparação do ambiente logando a minha conta na expo-cli, criação de conta na Twitch e registrar o aplicativo [stream.data](http://stream.data) no Twitch Dev Console
+
+- [x] Adicionar variáveis de ambiente.
+
+- [x] Implementação do fluxo de SignIn e SignOut utilizando a documentação de <a href="https://dev.twitch.tv/docs/authentication">Authentication</a> em e <a href="https://dev.twitch.tv/docs/api">Twitch API</a>.
+
+<hr>
 <hr>
 
 <h2 id="licenca">📃 Licença</h2>
