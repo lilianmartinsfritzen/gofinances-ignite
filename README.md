@@ -162,16 +162,27 @@ npx react-native run-ios && npm start
 <hr>
 
 <h2 id="desafio">🏆 Desafio V - Deploy GoFinances</h2>
-  <img src="https://user-images.githubusercontent.com/83084256/180775017-d874dd22-2377-43c7-8fef-900b0e9688d3.png" width="260" height="260"/>
-<h3 id="I">📱 Desafio stream.data</h3>
 
-- [x] Preparação do ambiente logando a minha conta na expo-cli, criação de conta na Twitch e registrar o aplicativo [stream.data](http://stream.data) no Twitch Dev Console
+> 🎮 Caso queira testar a aplicação leia o QR code abaixo ou acesse o link https://expo.dev/@lmartinsfritzen/gofinances. Será necessário baixar o Expo Go no dispositivo.
 
-- [x] Adicionar variáveis de ambiente.
+<br>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/83084256/180897782-848c58d5-4faa-4b22-bae8-866fe2791a2c.png" width="260" height="260"/>
+</div>
+<br>
 
-- [x] Implementação do fluxo de SignIn e SignOut utilizando a documentação de <a href="https://dev.twitch.tv/docs/authentication">Authentication</a> em e <a href="https://dev.twitch.tv/docs/api">Twitch API</a>.
+> Nesse desafio foi necessário configurar o ícone que representa o aplicativo no dispositivo após baixado, além dos que serão exibidos nas lojas. Também foi adicionada a Splash Screen e o deploy via Expo.
 
-<hr>
+<br>
+
+- [x] Ícone e adaptiveIcon.
+
+- [x] Configurar background-color da tela splash.
+
+- [x] Verificar implementação da Splash Screen.
+
+- [x] Logar na conta Expo, rodar a build e verificar se publicação do aplicativo ocorreu de forma correta, deixar o link aberto para a leitura do QR code e para que outras pessoas possam baixar e usar via Expo Go.
+
 <hr>
 
 <h2 id="licenca">📃 Licença</h2>
