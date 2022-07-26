@@ -163,11 +163,12 @@ npx react-native run-ios && npm start
 
 <h2 id="desafio">🏆 Desafio V - Deploy GoFinances</h2>
 
-> 🎮 Caso queira testar a aplicação leia o QR code abaixo ou acesse o link https://expo.dev/@lmartinsfritzen/gofinances. Será necessário baixar o Expo Go no dispositivo.
+> 🎮 Caso queira testar a aplicação em seu ANDROID acesse o link https://expo.dev/@lmartinsfritzen/gofinances. Será necessário baixar o Expo Go no dispositivo.
 
 <br>
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/83084256/180897782-848c58d5-4faa-4b22-bae8-866fe2791a2c.png" width="260" height="260"/>
+  <img src="https://user-images.githubusercontent.com/83084256/180903538-d8d4e231-8681-4e46-a67b-c3ab85476c51.jpeg" width="270" height="500"/>
+
 </div>
 <br>
 
